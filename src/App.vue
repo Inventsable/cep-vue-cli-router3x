@@ -55,10 +55,10 @@ export default {
 
     this.loadUniversalScripts();
 
+    // Dynamic color handling library, see
+    // https://github.com/Inventsable/starlette
+    // for details and list of available CSS variables.
     starlette.init();
-
-    // Vue Router must be manually initialized in CEP:
-    this.$router.push({ name: "home" });
   },
   methods: {
     dispatchEvent(name, data) {
